@@ -1,6 +1,6 @@
 # Raspberry Shake Live Viewer
 
-A real-time waveform & spectrogram viewer for [Raspberry Shake](https://raspberryshake.org/) seismometers, plus a "Shake Challenge" game for outreach events. Read-only — does not modify anything on the Shake.
+A real-time waveform & spectrogram viewer for Raspberry Shake seismometers, plus a "Shake Challenge" game for outreach events. (Read-only)
 
 ![channels: EHZ / EHN / EHE](https://img.shields.io/badge/channels-EHZ%20%7C%20EHN%20%7C%20EHE-blue)
 
