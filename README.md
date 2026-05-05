@@ -13,20 +13,41 @@ A real-time waveform & spectrogram viewer for Raspberry Shake seismometers, plus
 
 ## Install
 
+Clone the repo first:
+
+```bash
+git clone https://github.com/CIELO-G/raspberry-shake-viewer.git
+cd raspberry-shake-viewer
+```
+
 ### Conda (recommended)
 
 ```bash
-git clone <your-repo-url> shake-viewer
-cd shake-viewer
 conda env create -f environment.yml
 conda activate shake-viewer
 ```
 
-### Pip
+To update an existing env after pulling new changes:
 
 ```bash
+conda env update -f environment.yml --prune
+```
+
+### Pip + venv
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
+
+### Verify
+
+```bash
+python viewer.py --help
+```
+
+You should see the CLI flag list. If you get an `ImportError` for `PyQt5`, your environment didn't activate — re-run the activate step above.
 
 ## Run
 
