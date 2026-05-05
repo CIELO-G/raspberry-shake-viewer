@@ -27,28 +27,6 @@ conda env create -f environment.yml
 conda activate shake-viewer
 ```
 
-To update an existing env after pulling new changes:
-
-```bash
-conda env update -f environment.yml --prune
-```
-
-### Pip + venv
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### Verify
-
-```bash
-python viewer.py --help
-```
-
-You should see the CLI flag list. If you get an `ImportError` for `PyQt5`, your environment didn't activate — re-run the activate step above.
-
 ## Run
 
 ```bash
