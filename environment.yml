@@ -1,0 +1,11 @@
+name: shake-viewer
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - numpy
+  - scipy
+  - matplotlib
+  - obspy
+  - pyqtgraph
+  - pyqt=5.*
